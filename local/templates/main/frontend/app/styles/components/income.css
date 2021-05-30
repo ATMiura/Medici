@@ -1,0 +1,26 @@
+.income-schedule{
+    display: flex;
+    align-items: center;
+
+    padding: 48px 34px 51px 51px;
+}
+.income-schedule__picture{
+    min-width: 220px;
+}
+.income-schedule__image{
+
+}
+.income-schedule__list{
+    padding: 0;
+}
+.income-schedule__item{
+    font-size: 14px;
+    line-height: 1.57;
+    span{
+        color: #6C6F72;
+    }
+
+    &:not(:last-child){
+        margin-bottom: 28px;
+    }
+}

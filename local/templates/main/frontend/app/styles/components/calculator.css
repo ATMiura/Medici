@@ -1,0 +1,63 @@
+.calculator{
+    margin: 80px auto;
+    .container{
+        max-width: 1170px;
+        padding: 50px !important;
+        background: #F5F7F9;
+        border-radius: 8px;
+    }
+}
+.calculator-form{
+    flex-grow: 1;
+    .form-row{
+        &:not(:last-child){
+            margin-bottom: 50px;
+        }
+    }
+    .form-col{
+        flex: 0 0 50%;
+    }
+}
+.calculator-form__title{
+    margin-bottom: 50px;
+}
+.calculator-images{
+    position: relative;
+    height: 100%;
+}
+.calculator-img__image{
+    position: absolute;
+}
+.calculator-result{
+    .polygon{
+        max-width: 400px;
+        width: 100%;
+        border: 1px solid #D3DCE5;
+        &:before{
+            left: -19px;
+            width: 42px;
+            height: 58px;
+            background-image: url("data:image/svg+xml,%3Csvg width='43' height='59' viewBox='0 0 43 59' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M40.915 29.1376C41.2484 29.3301 41.2484 29.8112 40.915 30.0037L12.5764 46.365C12.2431 46.5574 11.8264 46.3169 11.8264 45.932L11.8264 13.2093C11.8264 12.8244 12.2431 12.5839 12.5764 12.7763L40.915 29.1376Z' fill='%23F5F7F9' stroke='%23D3DCE5'/%3E%3Crect x='1.94629' y='0.537598' width='15.8883' height='58.0666' fill='%23F5F7F9'/%3E%3C/svg%3E%0A");
+        }
+    }
+}
+.calculator-result__inner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    font-size: 34px;
+    color: #001424;
+    font-weight: bold;
+    text-align: center;
+}
+.calculator-result__title{
+    line-height: 1.18;
+}
+.calculator-result__value{
+    margin: 50px 0;
+    font-weight: normal;
+    line-height: .76;
+}

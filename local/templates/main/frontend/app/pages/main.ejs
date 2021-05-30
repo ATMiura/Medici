@@ -1,8 +1,21 @@
 <% const data = {
-    'title': 'Главная',
+    'title': 'Инвестируй <br> без знаний и опыта',
+    'subtitle': 'В команде профессионалов с гарантированным доходом от 5% в месяц',
     'flowContainerClass' : 'flow-container--main'
 } %>
 
 <%- require("../layouts/header.ejs")(data) %>
-<h1>Главная страница</h1>
+
+<%- require("../section/section-head.ejs")(data) %>
+<%- require("../section/section-callback.ejs")() %>
+<%- require("../section/section-company-info.ejs")() %>
+<%- require("../section/section-about.ejs")() %>
+<%- require("../section/section-target.ejs")() %>
+<%- require("../section/section-income.ejs")() %>
+<%- require("../section/section-how-work.ejs")() %>
+<%- require("../section/section-calculator.ejs")() %>
+<%- require("../section/section-news.ejs")() %>
+<%- require("../section/section-referal.ejs")() %>
+<%- require("../section/section-glad.ejs")() %>
+
 <%- require("../layouts/footer.ejs")() %>

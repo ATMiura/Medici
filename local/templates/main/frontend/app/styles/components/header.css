@@ -2,5 +2,36 @@
 @import "../variables.css";
 
 .header {
+    background: #F5F7F9;
 
+    .header-logo{
+        margin-right: 40px;
+    }
+
+    .header-nav{
+        padding-bottom: 97px;
+    }
+
+    .navbar{
+        padding: 0;
+        padding-top: 8px;
+        .nav-item{
+            &:not(:last-child){
+                margin-right: 30px;
+            }
+        }
+        .nav-link{
+            padding: 0;
+        }
+    }
+}
+
+.sign-up{
+    display: flex;
+    .btn{
+        text-transform: uppercase;
+        &:not(:last-child){
+            margin-right: 10px;
+        }
+    }
 }

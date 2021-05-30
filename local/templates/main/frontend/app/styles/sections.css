@@ -1,0 +1,111 @@
+@import "./media.css";
+@import "./variables.css";
+
+.section{
+    &:not(.section-head):not(.section--bordered){
+        .container{
+            padding: 0 65px;
+        }
+    }
+}
+.section-title{
+    margin-bottom: 40px;
+}
+.section-descr{
+    &--full{
+        display: flex;
+        max-width: 100%;
+        padding-bottom: 40px;
+        margin-bottom: 40px;
+        border-bottom: 1px solid var(--border);
+        .section-descr__col{
+            flex-basis: 50%;
+            max-width: 50%;
+        }
+        .section-descr-col__inner{
+            max-width: 450px;
+        }
+    }
+    &--half{
+         max-width: 400px;
+    }
+    p{
+        &:not(:last-child){
+            margin-bottom: 20px;
+         }
+    }
+}
+
+.section--bordered{
+    .container{
+        padding: 50px 65px;
+        position: relative;
+        &:before{
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 15px;
+            bottom: 0;
+            left: 15px;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+        }
+    }
+}
+.section-head{
+    background: #F5F7F9;
+    .info-block{
+        margin-bottom: -37px;
+    }
+}
+.section-head__title{
+
+}
+.section-head__subtitle{
+    margin-top: 24px;
+    margin-bottom: 58px;
+    font-size: 20px;
+}
+.section.section-callback{
+    margin: 87px 0 81px;
+    .container{
+        padding: 45px 65px;
+    }
+}
+.section-company-info{
+    padding: 70px 0;
+    margin-bottom: 90px;
+
+    color: #6C6F72;
+}
+.section-about{
+    margin-bottom: 90px;
+}
+.section-target{
+    margin-bottom: 80px;
+}
+.section-income{
+    margin-bottom: 80px;
+}
+.section-how-work{
+    padding-top: 84px;
+    margin-bottom: 85px;
+    .info-block__inner{
+        height: 100%;
+    }
+}
+.section-calculator{
+    margin-top: 180px;
+    padding-bottom: 80px;
+}
+.section-news{
+    margin-bottom: 80px;
+}
+.section-referal{
+    max-height: 500px;
+    padding-top: 80px;
+    margin-bottom: 140px;
+}
+.section-glad{
+    margin-bottom: 80px;
+}

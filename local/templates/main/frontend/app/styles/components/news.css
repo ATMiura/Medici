@@ -1,0 +1,36 @@
+.news{
+    .container{
+        padding: 0 15px !important;
+    }
+}
+.news-card{
+
+}
+.news-card__inner{
+
+}
+.news-card__link{
+
+}
+.news-card__picture{
+    height: 0;
+    padding-bottom: 100%;
+}
+.news-card__image{
+    display: block;
+    width: 100%;
+    -o-object-fit: cover;
+    font-family: object-fit\:cover;
+    object-fit: cover;
+}
+.news-card__content{
+    padding-top: 30px;
+}
+.news-card__title{
+    margin-bottom: 21px;
+}
+.news-card__excerpt{
+    font-size: 14px;
+    line-height: 1.57;
+    color: #6C6F72;
+}

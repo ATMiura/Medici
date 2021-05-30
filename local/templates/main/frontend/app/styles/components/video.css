@@ -1,0 +1,13 @@
+.video{
+    margin-top: 50px;
+}
+.video-link{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.video-play{
+    position: absolute;
+    margin: auto;
+}

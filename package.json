@@ -52,8 +52,10 @@
   "dependencies": {
     "air-datepicker": "^2.2.3",
     "animate.css": "^3.7.2",
+    "aos": "^2.3.4",
     "autoprefixer": "^7.2.6",
     "baron": "^3.0.3",
+    "bootstrap": "^4.5.0",
     "bundle-loader": "^0.5.6",
     "cssnano": "^3.7.3",
     "es6-promise": "^4.2.6",
@@ -65,7 +67,7 @@
     "imports-loader": "^0.7.0",
     "inputmask": "^3.3.11",
     "intersection-observer": "^0.7.0",
-    "jquery": "^3.4.1",
+    "jquery": "^3.6.0",
     "jquery-mousewheel": "^3.1.13",
     "lozad": "^1.9.0",
     "magnific-popup": "^1.1.0",
@@ -76,6 +78,7 @@
     "parallax-js": "^3.1.0",
     "path": "^0.12.7",
     "pickmeup": "^3.2.1",
+    "popper.js": "^1.16.1",
     "postcss": "^5.2.18",
     "postcss-cssnext": "^2.8.0",
     "postcss-custom-media": "^5.0.1",
@@ -101,6 +104,7 @@
     "swiper": "^4.5.0",
     "url-loader": "^0.5.7",
     "url-search-params-polyfill": "^7.0.0",
-    "webpack-svgstore-plugin": "^2.1.1"
+    "webpack-svgstore-plugin": "^2.1.1",
+    "wowjs": "^1.1.3"
   }
 }

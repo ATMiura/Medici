@@ -2,8 +2,15 @@
 
 :root {
     --c-black: black;
+    --c-white: #fff;
 
-    --border: #F0F0F0;
+    --c-main: #1E303E;
+    --c-headings: #001424;
+    --c-red: #CB2123;
+    --c-red-hover: #B61214;
+    --c-blue: #125DA2;
+
+    --border: #D3DCE5;
 
     --inputBg: #EDEDED;
     --inputBorder: #CFCFCF;
