@@ -33,9 +33,9 @@ input::-ms-clear {
 
 .form-col {
     position: relative;
-    width: 100%;
-    min-width: 100%;
-    max-width: 100%;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
     padding: 0 15px;
     margin-bottom: 0;
     &__icon {
@@ -210,13 +210,6 @@ input::-ms-clear {
             top: -22px;
         }
     }
-    &.bx-ui-sls-input-block {
-        .bx-ui-sls-container {
-            .placeholder {
-                left: 0;
-            }
-        }
-    }
 }
 
 .input,
@@ -229,7 +222,7 @@ input::-ms-clear {
     color: black;
     background-color: transparent;
     border: none;
-    border-bottom: 1px solid var(--c-black);
+    border-bottom: 1px solid var(--border);
     &::placeholder {
         color: var(--placeholder);
         opacity: 1;
@@ -245,15 +238,6 @@ input::-ms-clear {
     }
     @media(--mobile-xs) {
         font-size: 11px;
-    }
-}
-
-.bx-ui-sls-fake {
-    &:focus {
-        outline: 0;
-        & + .placeholder {
-            top: -22px;
-        }
     }
 }
 
@@ -361,7 +345,7 @@ input::-ms-clear {
         cursor: pointer;
     }
 }
-.checkbox {
+/*.checkbox {
     &--big {
         .checkbox__input,
         .checkbox__emulator,
@@ -469,7 +453,7 @@ input::-ms-clear {
      height: 16px;
      line-height: 16px;
      text-align: center;
-     /*border: 1px solid var(--c-brown);*/
+     !*border: 1px solid var(--c-brown);*!
      z-index: 1;
      transition: .2s;
     .i-icon {
@@ -498,7 +482,7 @@ input::-ms-clear {
         background-color: white;
         border: 2px solid var(--c-orange);
         border-radius: 100%;
-        /*transition: var(--transition);*/
+        !*transition: var(--transition);*!
     }
 }
 
@@ -604,7 +588,7 @@ input::-ms-clear {
     &__text {
         flex: 1 1 auto;
     }
-}
+}*/
 
 .form-file {
     input {

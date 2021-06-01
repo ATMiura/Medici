@@ -17,7 +17,7 @@
         padding-top: 8px;
         .nav-item{
             &:not(:last-child){
-                margin-right: 30px;
+                margin-right: 28px;
             }
         }
         .nav-link{
@@ -28,6 +28,7 @@
 
 .sign-up{
     display: flex;
+    padding-top: 7px;
     .btn{
         text-transform: uppercase;
         &:not(:last-child){

@@ -13,10 +13,10 @@ export default class SvgUse {
                     file = './icons.svg';
                     break;
                 case `work.iarga.ru`:
-                    file = `/${App.nameProject}/local/templates/main/frontend/assets/icons.svg`;
+                    file = `/${App.nameProject}/wp-content/themes/medici/assets/icons.svg`;
                     break;
                 default:
-                    file = `/local/templates/main/frontend/assets/icons.svg`;
+                    file = `/wp-content/themes/medici/assets/icons.svg`;
                     break;
             }
 

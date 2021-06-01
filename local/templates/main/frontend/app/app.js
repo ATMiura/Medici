@@ -21,8 +21,8 @@ window.imagesLoaded = imagesLoaded;
 
 import 'bootstrap'
 
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+/*import AOS from 'aos';
+import 'aos/dist/aos.css';*/
 
 import {WOW} from 'wowjs';
 
@@ -64,7 +64,7 @@ if (App.debug) {
 document.addEventListener('DOMContentLoaded', function() {
     objectFitImages();
 
-    AOS.init();
+    //AOS.init();
     new WOW().init();
 
     if('ontouchstart' in window || navigator.maxTouchPoints) $(document.body).addClass("touch");

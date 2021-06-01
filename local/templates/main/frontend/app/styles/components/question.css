@@ -1,0 +1,27 @@
+.question{
+
+}
+.question-polygon{
+    .btn{
+        max-width: 236px;
+    }
+    .i-tg{
+        margin-right: 13px;
+    }
+}
+.question-polygon__inner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    font-size: 24px;
+    color: #001424;
+    font-weight: bold;
+    text-align: center;
+}
+.question-polygon__title{
+    margin-bottom: 25px;
+    line-height: 1.17;
+}

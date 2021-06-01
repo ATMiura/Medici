@@ -2,14 +2,17 @@
 @import "../variables.css";
 
 .btn {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
     height: 36px;
 
-    padding: 2px 19.5px;
+    padding: 2px 19px;
 
     font-weight: 500;
     font-size: 13px;
-    line-height: 2.4;
+    line-height: 1;
 
     box-sizing: border-box;
     border-radius: 60px;
@@ -23,6 +26,15 @@
         }
     }
 
+    &--blue{
+         background-color: var(--c-blue);
+         color: var(--c-white);
+        &:hover{
+             background-color: var(--c-blue);
+             color: var(--c-white);
+        }
+    }
+
     &--bordered{
          border: 1px solid var(--border);
     }
@@ -30,12 +42,12 @@
         display: inline-flex;
         align-items: center;
         padding-left: 0;
-        padding-right: 9px;
+        padding-right: 6px;
         height: 65px;
         .i-tg{
-            margin-right: 18px;
+            margin-left: 18px;
             & + .btn-text{
-                margin-left: 7px;
+                margin-left: 9px;
             }
         }
         .btn-text{
@@ -46,6 +58,12 @@
             font-size: 18px;
             line-height: 1.44;
         }
+    }
+    &--big{
+        max-width: 230px;
+        width: 100%;
+        height: 65px;
+        font-size: 18px;
     }
 
     .btn-arrow-wrap{

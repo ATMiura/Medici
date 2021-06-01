@@ -9,7 +9,7 @@ require("./editor.css");
 require("./fancybox.css");
 require("./fonts.css");
 require("./sections.css");
-//require("./forms.css");
+require("./forms.css");
 //require("./grid.css");
 //require("./helpers.css");
 require("./icons.css");
