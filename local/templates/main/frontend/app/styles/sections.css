@@ -104,7 +104,11 @@
 .section-referal{
     max-height: 500px;
     padding-top: 80px;
-    margin-bottom: 140px;
+    margin-bottom: 180px;
+    .section-descr--full{
+        padding-bottom: 0;
+        border-bottom: 0;
+    }
 }
 .section-glad{
     margin-bottom: 80px;

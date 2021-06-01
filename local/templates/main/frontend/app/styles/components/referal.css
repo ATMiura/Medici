@@ -1,0 +1,10 @@
+.referal{
+    .container{
+        padding: 0 15px !important;
+    }
+    .info-block__inner{
+        max-width: 100%;
+        padding-left: 65px;
+        padding-right: 135px;
+    }
+}

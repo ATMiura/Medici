@@ -2,4 +2,46 @@
 @import "../variables.css";
 
 .footer {
+    padding: 40px 0 60px;
+    background: #1E1F20;
+}
+.footer-logo{
+
+}
+.footer-logo__inner{
+
+}
+.footer-logo__link{
+
+}
+.footer-logo__img{
+
+}
+.footer-nav{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+.footer-nav__inner{
+
+}
+.footer-nav__list{
+    padding: 0;
+}
+.footer-nav__item{
+    list-style: none;
+    &:not(:last-child){
+        margin-bottom: 21px;
+    }
+}
+.footer-nav__link{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #FFFFFF;
+}
+.footer-social{
+    padding-top: 20px;
 }
