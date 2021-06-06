@@ -1,7 +1,7 @@
 <div class="section section-main">
     <div class="container">
         <div class="row">
-            <div class="col-md-7 col-12">
+            <div class="col-lg-7 col-12">
                 <div class="section-head__title">
                     <h1 class="h1"><%- title %></h1>
                     <% if(subtitle) { %>
@@ -9,6 +9,8 @@
                             <%= subtitle %>
                         </div>
                     <% }%>
+                    <img src="./images/main-banner-img.svg" alt="" class="img-fluid wow fadeInDown d-lg-none" data-wow-delay="0.2s">
+
                 </div>
 
                 <div class="info-block">
@@ -26,8 +28,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-5 col-12">
-                <img src="./images/main-banner-img.svg" alt="" class="img-fluid wow fadeInDown" data-wow-delay="0.2s" style="padding-left: 6px;">
+            <div class="col-lg-5 col-12">
+                <img src="./images/main-banner-img.svg" alt="" class="img-fluid wow fadeInDown d-lg-block d-none" data-wow-delay="0.2s" style="padding-left: 6px;">
             </div>
         </div>
     </div>

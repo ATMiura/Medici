@@ -4,10 +4,12 @@
     }
 }
 .news-card{
-
+    @media(max-width: 991px){
+        margin-bottom: 30px;
+    }
 }
 .news-card__inner{
-
+    text-align: left;
 }
 .news-card__link{
 

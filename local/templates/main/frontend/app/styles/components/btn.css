@@ -57,6 +57,20 @@
 
             font-size: 18px;
             line-height: 1.44;
+            @media(max-width: 575px){
+                font-size: 14px;
+            }
+        }
+        @media(max-width: 575px){
+            padding-right: 0;
+            width: 100%;
+
+            .i-tg{
+                display: none;
+            }
+            .btn-text{
+                margin: 0 10px;
+            }
         }
     }
     &--big{

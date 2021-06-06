@@ -24,22 +24,25 @@ import 'bootstrap'
 /*import AOS from 'aos';
 import 'aos/dist/aos.css';*/
 
-import {WOW} from 'wowjs';
-
 // load modules
-import Utils from'./js/utils/utils'
+//import Utils from'./js/utils/utils'
 import SvgUse from'./js/svgUse'
-import Forms from'./js/forms/forms'
+//import Forms from'./js/forms/forms'
 import Modals from'./js/modals'
-import MapObject from'./js/map-object'
-import Sliders from'./js/sliders'
-import Search from'./js/search'
-import Debounce from'./js/debounce'
+import Custom from "./js/custom"
+import Calculator from "./js/calculator"
+//import MapObject from'./js/map-object'
+//import Sliders from'./js/sliders'
+//import Search from'./js/search'
+//import Debounce from'./js/debounce'
 // import MapObject from'./js/map'
 // import MapObject from'./js/scrollbar'
 // import Video from'./js/video'
 // import Tabs from './js/tabs'
 // import Media from './js/media'
+//import Wow from "./js/wow";
+
+
 
 // Load styles
 import './styles/app.js';
@@ -47,9 +50,9 @@ import './styles/app.js';
 // Run components
 
 window.App = {
-    nameProject: 'example',
+    nameProject: 'medici-invest',
     debug: false,
-    lang: 'ru'
+    lang: 'com'
 };
 
 if (window.SITE_LANG) {
@@ -65,28 +68,31 @@ document.addEventListener('DOMContentLoaded', function() {
     objectFitImages();
 
     //AOS.init();
-    new WOW().init();
 
     if('ontouchstart' in window || navigator.maxTouchPoints) $(document.body).addClass("touch");
 
-    App.Debounce = new Debounce();
-    App.Utils = new Utils();
+    //App.Debounce = new Debounce();
+    //App.Utils = new Utils();
     App.SvgUse = new SvgUse();
-    App.Forms = new Forms();
+    //App.Forms = new Forms();
     App.Modals = new Modals();
-    App.MapObject = new MapObject();
-    App.Sliders = new Sliders();
-    App.Search = new Search();
-    App.Debounce = new Debounce();
+    App.Custom = new Custom();
+    App.Calculator = new Calculator();
+    //App.Wow = new Wow();
+    //App.MapObject = new MapObject();
+    //App.Sliders = new Sliders();
+    //App.Search = new Search();
+    //App.Debounce = new Debounce();
     // App.Map = new Map();
     // App.Video = new Video();
     // App.Scrollbar = new Scrollbar();
     // App.Tabs = new Tabs();
     // App.Media = new Media();
+    //App.Wow = new Wow();
 
-    $('[data-inputmask]').each(function () {
-        IMask($(this)[0], {mask: "0 (000) 000-0000"});
-    });
+    //$('[data-inputmask]').each(function () {
+    //    IMask($(this)[0], {mask: "0 (000) 000-0000"});
+    //});
 
     // prevent copying
 

@@ -28,7 +28,7 @@
     }
 }
 .info-block-col{
-
+    text-align: left;
 }
 .info-block__title{
     margin-bottom: 1em;
@@ -37,6 +37,11 @@
     line-height: .8;
     letter-spacing: .8px;
     color: #fff;
+
+    @media(max-width: 575px){
+        font-size: 16px;
+        line-height: 1.2;
+    }
 }
 .info-block__descr{
     max-width: 400px;
@@ -59,6 +64,14 @@
         line-height: 1.87;
         color: #DCDCDC;
     }
+    @media(max-width: 575px){
+        font-size: 14px;
+        line-height: 1.4;
+        ul{
+            font-size: 14px;
+            line-height: 1.4;
+        }
+    }
 }
 .info-block__images{
     position: absolute;
@@ -73,7 +86,9 @@
 
 
 .info-block-lvl{
-
+    @media(max-width: 575px){
+        width: 100%;
+    }
 }
 .info-block-lvl__list{
 
@@ -116,9 +131,35 @@
     &:not(:last-child){
         margin-bottom: 11px;
     }
+    @media(max-width: 575px){
+        min-width: auto;
+        width: 100%;
+        &--1{
+            .info-block-lvl-item__value {
+                min-width: 120px;
+                width: 120px;
+            }
+        }
+        &--2{
+            .info-block-lvl-item__value {
+                min-width: 90px;
+                width: 90px;
+            }
+        }
+        &--3{
+            .info-block-lvl-item__value {
+
+
+            }
+        }
+    }
 }
 .info-block-lvl-item__text{
     display: flex;
+    @media(max-width: 575px){
+        font-size: 12px;
+        white-space: nowrap;
+    }
 }
 .info-block-lvl-item__value{
     display: flex;

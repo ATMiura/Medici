@@ -4,15 +4,21 @@
 .footer {
     padding: 40px 0 60px;
     background: #1E1F20;
+
+    @media(max-width: 991px){
+        text-align: center;
+    }
 }
 .footer-logo{
-
+    @media(max-width: 991px){
+        margin-bottom: 50px;
+    }
 }
 .footer-logo__inner{
 
 }
 .footer-logo__link{
-
+    display: block;
 }
 .footer-logo__img{
 
@@ -22,6 +28,10 @@
     align-items: flex-start;
     justify-content: space-between;
     padding-top: 20px;
+    @media(max-width: 991px){
+        flex-direction: column;
+        align-items: center;
+    }
 }
 .footer-nav__inner{
 
@@ -44,4 +54,9 @@
 }
 .footer-social{
     padding-top: 20px;
+    @media(max-width: 991px){
+       .social-list{
+           justify-content: center;
+       }
+    }
 }

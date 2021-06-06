@@ -1,7 +1,7 @@
 <div class="section section-calculator">
     <div class="container">
         <div class="row">
-            <div class="col-md-6 col-12">
+            <div class="col-lg-6 col-12">
                 <div class="section-title">
                     <h2>Калькулятор доходности</h2>
                 </div>
@@ -16,7 +16,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-12">
+            <div class="col-lg-6 col-12">
                 <div class="calculator-images">
                     <img src="./images/calculator-img-1.png" alt="" class="calculator-img__image wow fadeInDown" data-wow-delay="0.2s">
                     <img src="./images/calculator-img-2.png" alt="" class="calculator-img__image wow fadeInDown" data-wow-delay="0.4s">
@@ -28,26 +28,26 @@
     <div class="calculator">
         <div class="container">
             <div class="row">
-                <div class="col-md-7 col-12 calculator-form">
+                <div class="col-lg-7 col-12 calculator-col__left">
                     <div class="calculator-form__inner">
                         <div class="calculator-form__title">
                             <h2>Рассчитайте свой <br> гарантированный доход</h2>
                         </div>
                         <div class="calculator-form__inner">
-                            <div class="form">
+                            <div class="form" data-calculator-form>
                                 <div class="form-row">
                                     <div class="form-col">
                                         <div class="form-col__title">Инвестировать</div>
                                         <div class="radio">
                                             <label class="radio__label">
-                                                <input type="radio" name="invest" id="mdc" class="radio__input" checked>
+                                                <input type="radio" name="invest" id="mdc" class="radio__input" checked value="1000" data-calculator-input>
                                                 <div class="radio__emulator"></div>
                                                 <div class="radio__text">в MDC</div>
                                             </label>
                                         </div>
                                         <div class="radio">
                                             <label class="radio__label">
-                                                <input type="radio" name="invest" id="usd" class="radio__input">
+                                                <input type="radio" name="invest" id="usd" class="radio__input" value="2000" data-calculator-input>
                                                 <div class="radio__emulator"></div>
                                                 <div class="radio__text">в USD</div>
                                             </label>
@@ -57,14 +57,14 @@
                                         <div class="form-col__title">Делегировать</div>
                                         <div class="radio">
                                             <label class="radio__label">
-                                                <input type="radio" name="delegate" id="delegateYes" class="radio__input" checked>
+                                                <input type="radio" name="delegate" id="delegateYes" class="radio__input" checked value="3000" data-calculator-input>
                                                 <div class="radio__emulator"></div>
                                                 <div class="radio__text">да</div>
                                             </label>
                                         </div>
                                         <div class="radio">
                                             <label class="radio__label">
-                                                <input type="radio" name="delegate" id="delegateNo" class="radio__input">
+                                                <input type="radio" name="delegate" id="delegateNo" class="radio__input" value="4000" data-calculator-input>
                                                 <div class="radio__emulator"></div>
                                                 <div class="radio__text">нет</div>
                                             </label>
@@ -75,15 +75,15 @@
                                     <div class="form-col">
                                         <div class="form-col__title">Сумма инвестиций</div>
                                         <label class="label">
-                                            <input type="text" class="input">
+                                            <input type="number" class="input" placeholder="1" data-calculator-input>
                                         </label>
                                     </div>
                                     <div class="form-col">
                                         <div class="form-col__title">Срок инвестирования</div>
                                         <label class="label">
                                             <div class="range">
-                                                <input type="range" class="input input-range">
-                                                <div class="range__value"></div>
+                                                <input type="range" class="input input-range" min="0" max="24" step="1" data-input-range data-calculator-input>
+                                                <div class="range__value" data-input-range-value></div>
                                                 <div class="range__limit">
                                                     <div class="range__limit-min"></div>
                                                     <div class="range__limit-max"></div>
@@ -96,7 +96,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-5 col-12 calculator-result">
+                <div class="col-lg-5 col-12 calculator-result">
                     <div class="polygon">
                         <div class="calculator-result__inner">
                             <div class="calculator-result__title">Ваш доход:</div>

@@ -24,15 +24,32 @@
             padding: 0;
         }
     }
+    .navbar-light{
+        .navbar-nav{
+            .nav-link{
+                color: #000;
+            }
+        }
+    }
+    @media(max-width: 991px){
+        .header-nav{
+            padding-bottom: 50px;
+        }
+    }
 }
 
 .sign-up{
     display: flex;
     padding-top: 7px;
+    margin-left: auto;
     .btn{
         text-transform: uppercase;
         &:not(:last-child){
             margin-right: 10px;
         }
+    }
+    @media(max-width: 575px){
+        margin-left: 0;
+        margin-top: 20px;
     }
 }

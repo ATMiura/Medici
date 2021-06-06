@@ -3,15 +3,30 @@
     align-items: center;
 
     padding: 48px 34px 51px 51px;
+    @media(max-width: 1199px){
+        padding: 30px;
+    }
+    @media(max-width: 991px){
+        padding-top: 50px;
+    }
+    @media(max-width: 575px){
+       flex-wrap: wrap;
+    }
 }
 .income-schedule__picture{
     min-width: 220px;
+    @media(max-width: 1199px){
+        min-width: 160px;
+        padding-right: 15px;
+    }
 }
 .income-schedule__image{
 
 }
 .income-schedule__list{
     padding: 0;
+    margin-bottom: 0;
+    text-align: left;
 }
 .income-schedule__item{
     font-size: 14px;

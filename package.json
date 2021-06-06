@@ -55,7 +55,7 @@
     "aos": "^2.3.4",
     "autoprefixer": "^7.2.6",
     "baron": "^3.0.3",
-    "bootstrap": "^4.5.0",
+    "bootstrap": "^4.0.0",
     "bundle-loader": "^0.5.6",
     "cssnano": "^3.7.3",
     "es6-promise": "^4.2.6",
@@ -105,6 +105,7 @@
     "url-loader": "^0.5.7",
     "url-search-params-polyfill": "^7.0.0",
     "webpack-svgstore-plugin": "^2.1.1",
+    "wow.js": "^1.2.2",
     "wowjs": "^1.1.3"
   }
 }

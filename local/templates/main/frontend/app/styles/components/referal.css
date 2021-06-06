@@ -6,5 +6,18 @@
         max-width: 100%;
         padding-left: 65px;
         padding-right: 135px;
+        @media(max-width: 1199px){
+            padding: 30px;
+        }
+    }
+    @media(max-width: 991px){
+        .info-block__inner{
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .info-block-col {
+            text-align: center;
+            margin-bottom: 20px;
+        }
     }
 }

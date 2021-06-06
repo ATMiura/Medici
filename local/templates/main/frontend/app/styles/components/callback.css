@@ -2,7 +2,12 @@
 
 }
 .callback-col{
-
+    @media(max-width: 992px){
+        text-align: center;
+        &:not(:last-child){
+            margin-bottom: 30px;
+        }
+    }
 }
 .callback__title{
     padding-left: 17px;
@@ -10,4 +15,12 @@
 .callback__btn {
     padding-right: 15px;
     margin-top: -5px;
+    @media(max-width: 991px){
+        padding-top: 0;
+        margin: 0 auto;
+    }
+    @media(max-width: 575px){
+        padding-right: 0;
+        width: 100%;
+    }
 }
