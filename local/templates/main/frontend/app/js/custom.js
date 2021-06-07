@@ -34,7 +34,7 @@ export default class Custom {
             $(this).find('.range__limit-max').text(inputRangeMax);
         });
 
-        $(document).on('input', this.inputRange, function (){
+        $(document).on('input', '[data-input-range]', function (){
             self.setBubble($(this));
         });
 
