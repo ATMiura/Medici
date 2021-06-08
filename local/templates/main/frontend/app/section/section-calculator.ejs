@@ -40,14 +40,14 @@
                                         <div class="form-col__title">Инвестировать</div>
                                         <div class="radio">
                                             <label class="radio__label">
-                                                <input type="radio" name="invest" id="mdc" class="radio__input" checked value="1000" data-calculator-input>
+                                                <input type="radio" name="invest" id="mdc" class="radio__input" data-invest-label="MDC" checked data-calculator-input>
                                                 <div class="radio__emulator"></div>
                                                 <div class="radio__text">в MDC</div>
                                             </label>
                                         </div>
                                         <div class="radio">
                                             <label class="radio__label">
-                                                <input type="radio" name="invest" id="usd" class="radio__input" value="2000" data-calculator-input>
+                                                <input type="radio" name="invest" id="usd" class="radio__input" data-invest-label="USD" data-calculator-input>
                                                 <div class="radio__emulator"></div>
                                                 <div class="radio__text">в USD</div>
                                             </label>
@@ -57,14 +57,14 @@
                                         <div class="form-col__title">Делегировать</div>
                                         <div class="radio">
                                             <label class="radio__label">
-                                                <input type="radio" name="delegate" id="delegateYes" class="radio__input" checked value="3000" data-calculator-input>
+                                                <input type="radio" name="delegate" id="delegateYes" class="radio__input" checked value="yes" data-calculator-input>
                                                 <div class="radio__emulator"></div>
                                                 <div class="radio__text">да</div>
                                             </label>
                                         </div>
                                         <div class="radio">
                                             <label class="radio__label">
-                                                <input type="radio" name="delegate" id="delegateNo" class="radio__input" value="4000" data-calculator-input>
+                                                <input type="radio" name="delegate" id="delegateNo" class="radio__input" value="no" data-calculator-input>
                                                 <div class="radio__emulator"></div>
                                                 <div class="radio__text">нет</div>
                                             </label>
@@ -75,7 +75,7 @@
                                     <div class="form-col">
                                         <div class="form-col__title">Сумма инвестиций</div>
                                         <label class="label">
-                                            <input type="number" class="input" placeholder="1" data-calculator-input>
+                                            <input type="number" class="input" id="investSum" min="1" placeholder="1" value="1" data-invest-input data-calculator-input>
                                         </label>
                                     </div>
                                     <div class="form-col">
