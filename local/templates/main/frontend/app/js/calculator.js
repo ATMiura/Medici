@@ -34,27 +34,29 @@ export default class Calculator {
             let investLabel = $('[data-invest-label]:checked').attr('data-invest-label');
 
             if($('[name="delegate"]:checked').val() === 'yes'){
-                $('#mdc').attr('value', '0.13');
-                $('#usd').attr('value', '0.08');
+                $('#mdc').attr('value', '13');
+                $('#usd').attr('value', '8');
 
                 let r = $('[name="invest"]:checked').val();
                 let t = $('[data-input-range]').val();
-                let P = $('#investSum').val();
-                sum = parseInt((P*(1 + r*t)));
+                let p = $('#investSum').val();
+                sum = (p * Math.pow((1 + (r/100)), t));
+                //sum = parseInt((P*(1 + r*t)));
 
-                $(self.calculatorResult).text(sum+' '+investLabel);
+                $(self.calculatorResult).text(sum.toFixed(2) +' '+investLabel);
 
             } else {
-                $('#mdc').attr('value', '0.1');
-                $('#usd').attr('value', '0.05');
+                $('#mdc').attr('value', '10');
+                $('#usd').attr('value', '5');
 
 
                 let r = $('[name="invest"]:checked').val();
                 let t = $('[data-input-range]').val();
-                let P = $('#investSum').val();
-                sum = parseInt((P*(1 + r*t))) ;
+                let p = $('#investSum').val();
+                sum = (p * Math.pow((1 + (r/100)), t));
+                //sum = parseInt((P*(1 + r*t)));
 
-                $(self.calculatorResult).text(sum+' '+investLabel);
+                $(self.calculatorResult).text(sum.toFixed(2) +' '+investLabel);
 
             }
         });
